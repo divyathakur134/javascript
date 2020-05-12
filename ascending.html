@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Ascending Sort</h2>
+
+
+<button onclick="Ascend()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var names = ["Anuj", "Sweety", "Divya", "Ritu"];
+document.getElementById("demo").innerHTML = names;
+
+function Ascend() {
+  names.sort();
+  document.getElementById("demo").innerHTML = names;
+}
+</script>
+
+</body>
+</html>
