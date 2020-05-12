@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>valid mobile number</h3>
+<p>Click the button to check</p>
+
+<button onclick="phonenumber()">click here</button>
+
+<p id="first"></p>
+<p id="second"></p>
+
+<script>
+    var txt="9988776655"
+    document.getElementById("first").innerHTML=txt;
+if(document.getElementById("second").innerHTML=txt.length==10)
+{
+    document.getElementById("second").innerHTML="valid";
+}
+else{
+    document.getElementById("second").innerHTML="not-valid";
+}
+
+</script>
+
+</body>
+</html>
