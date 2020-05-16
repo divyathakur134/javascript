@@ -1,0 +1,266 @@
+1>
+  <!DOCTYPE html>
+<html>
+<body>
+
+
+
+<p>The highest number is <span id="demo"></span>.</p>
+
+<script>
+var high = [40,230,2,1,5,25,10,18,23,12];
+document.getElementById("demo").innerHTML = myArrayMax(high);
+
+function myArrayMax(arr) {
+  return Math.max.apply(null, arr);
+}
+</script>
+
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2>
+ <!DOCTYPE html> 
+<html>
+<body>
+
+<p>Click the input button to display the value of its name attribute.</p>
+<p id="tad">Divya Thakur</p>
+<script>
+document.getElementById("tad").innerHtml;
+</script>
+
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3>
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+#myDIV {
+  width: 100%;
+ 
+  text-align: center;
+ 
+}
+</style>
+</head>
+<body>
+<button onclick="myFunction()">Try it</button>
+
+<div id="demo">
+DIVYA
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.style.display === "none") {
+   x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4>
+<html>
+  <body>
+    <div id="test"><b><h6>DIVYA</h6></b></div>
+	
+    <button onclick="changeIt()">Change</button>
+    <script>
+      function changeIt() {
+	  
+        document.getElementById('test').innerHTML="<h1>DIVYA</h1>";
+		
+		
+      }
+    </script>
+	
+	
+  </body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5><!DOCTYPE html>
+<html>
+<body>
+
+<h3>CURRENT DATE AND TIME</h3>
+
+
+<script>
+var d = new Date();
+
+
+</script>
+<button type="button" onclick="document.write(d)">click here</button>
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6>
+<html>
+<script type="text/javascript">
+function copy()
+{
+    var n1 = document.getElementById("n1");
+    var n2 = document.getElementById("n2");
+    n2.value = n1.value;
+}
+</script>
+<label>First</label><input type="text" name="n1" id="n1">
+<label>Second</label><input type="text" name="n2" id="n2"/>
+<input type="button" value="copy" onClick="copy();" />
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Ascending Sort</h2>
+
+
+<button onclick="Ascend()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var names = ["Anuj", "Sweety", "Divya", "Ritu"];
+document.getElementById("demo").innerHTML = names;
+
+function Ascend() {
+  names.sort();
+  document.getElementById("demo").innerHTML = names;
+}
+</script>
+
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+8>
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>Descending Sort</h2>
+
+<button onclick="desend()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+
+var names = ["Anuj", "Sweety", "Divya", "Shubham", "Deepa"];
+document.getElementById("demo").innerHTML = names;
+
+function desend() {
+  names.sort();
+  
+  names.reverse();
+  document.getElementById("demo").innerHTML = names;
+}
+</script>
+
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+9>
+  <!DOCTYPE html>
+<html>
+<body>
+
+         <p id = 's1'></p>
+        <button onclick="check()">check</button>
+        <p id = 'v1'></p>
+        <script>
+  var str = "divthakur5@gmail.com";
+  
+  document.getElementById("s1").innerHTML = str;
+
+function check()
+{
+   if(str.search("@")!=-1)
+   {
+    document.getElementById("v1").innerHTML = "true";
+   } 
+   else
+   {
+    document.getElementById("v1").innerHTML = "false";
+   }
+}
+      </script>
+  </body>
+ </html>
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+10>
+   <!DOCTYPE html>
+<html>
+<body>
+    
+ <p id = 'm1'></p>
+    <button onclick="checkmbno()">check</button>
+    <p id = 'm2'></p>
+        <script>
+ var mobileNumber =7028303527;
+var mstr = mobileNumber.toString();
+
+document.getElementById("m1").innerHTML = mobileNumber;
+function checkmbno()
+{
+   if(mstr.length==10)
+   {
+    document.getElementById("m2").innerHTML = "valid";
+   }
+   else
+   {
+    document.getElementById("m2").innerHTML = "invalid";
+   }
+}
+      </script>
+  </body>
+ </html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+11>
+ <!DOCTYPE html>
+<html>
+<body>
+    
+ <p id='r1'></p>
+<button onclick="give()">random number</button>
+        <script>
+function give()
+{
+    var num = Math.floor(Math.random() * 10)+1;
+    document.getElementById("r1").innerHTML = num;
+}
+
+      </script>
+  </body>
+ </html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
